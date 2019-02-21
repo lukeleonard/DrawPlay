@@ -8,8 +8,8 @@ public class Cat {
 	private static final int HEAD_DIMENSION = 100;
 	// eyes will be about 1/4 from top of head and 1/4 from left
 	private static final int EYE_Y = HEAD_DIMENSION/4;
-	private static final int EYE_X = HEAD_DIMENSION/4;
-	private static final int EYE_SEPARATION = HEAD_DIMENSION/3;
+	private static final int EYE_X = HEAD_DIMENSION/4 - 25;
+	private static final int EYE_SEPARATION = HEAD_DIMENSION/3 + 55;
 	// pick eye dimensions
 	private static final int EYE_HEIGHT = 120;
 	private static final int EYE_WIDTH = 10;
@@ -27,8 +27,8 @@ public class Cat {
 		int x=catX;
 		int y=catY;
 		// Draw the head
-		g2.setColor(Color.black);
-		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
+		g2.setColor(Color.gray);
+		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION + 150);
 		// Draw the eyes
 		g2.setColor(Color.red);
 		x = catX + EYE_X; 
